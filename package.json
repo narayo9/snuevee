@@ -1,7 +1,7 @@
 {
   "name": "snuevee",
   "productName": "snuevee",
-  "version": "1.0.0",
+  "version": "0.0.2-alpha",
   "description": "서울대 강의평가 원클릭 검색 데스크톱 앱",
   "main": ".webpack/main",
   "scripts": {
