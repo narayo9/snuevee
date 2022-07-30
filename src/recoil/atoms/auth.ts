@@ -11,7 +11,7 @@ export interface LoginInfoState {
   snulife: BasicAuth | null
 }
 
-export const loginInfoState = atom<LoginInfoState>({
+export const loginInfoAtom = atom<LoginInfoState>({
   key: "loginState",
   default: {
     localStorageLoaded: false,

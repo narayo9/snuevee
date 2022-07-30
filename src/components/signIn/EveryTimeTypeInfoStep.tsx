@@ -1,6 +1,6 @@
 import { Typography } from "antd";
 import { useSetRecoilState } from "recoil";
-import { loginInfoState } from "~/recoil/atoms/auth";
+import { loginInfoAtom } from "~/recoil/atoms/auth";
 import BasicAuthForm from "./BasicAuthForm";
 
 export interface Props {
@@ -8,7 +8,7 @@ export interface Props {
 }
 
 const EveryTimeTypeInfoStep: React.FC<Props> = ({ onNext }) => {
-  const setEveryTimeTypeInfo = useSetRecoilState(loginInfoState)
+  const setEveryTimeTypeInfo = useSetRecoilState(loginInfoAtom)
   return (
     <>
       <Typography.Title
