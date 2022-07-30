@@ -12,8 +12,8 @@ const MainPage = () => {
   return (
     <div
       css={css`
-        max-width: 800px;
-        margin: 400px auto 0;
+        padding-top: 250px;
+        margin: 0 auto;
         width: 100%;
         display: flex;
         flex-direction: column;
