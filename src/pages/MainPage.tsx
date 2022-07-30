@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 const MainButton = styled(Button)`
   margin-right: 15px;
+  &:last-of-type {
+    margin-right: 0;    
+  }
 `
 
 const MainPage = () => {
@@ -23,15 +26,12 @@ const MainPage = () => {
     >
       <h1 css={css`font-size: 100px; font-weight: bold; margin-bottom: 12px; `}>SNUEVEE</h1>
       <p css={css`font-size: 30px;`}>서울대 강의평가 원클릭 검색 앱</p>
-      <div css={css``}>
+      <div>
         <Link to="/sign-in">
           <MainButton type="primary" size="large">
             클릭하여 시작
           </MainButton>
         </Link>
-        <MainButton size="large">
-          좀 더 알아보기
-        </MainButton>
       </div>
     </div>
   );
