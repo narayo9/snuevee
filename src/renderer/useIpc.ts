@@ -19,7 +19,7 @@ const useIpc = () => {
       console.log('snulife pong~', value)
       setCrawlerState((state) => ({
         ...state,
-        everytime: { status: 'LOGIN_PAGE' },
+        snulife: { status: 'LOGIN_PAGE' },
       }))
     })
   }, [])
