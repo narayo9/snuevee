@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx .",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "keywords": [],
   "author": {
@@ -112,5 +112,6 @@
   "packageManager": "yarn@3.2.2",
   "lint-staged": {
     "*.(ts|tsx)": "eslint --cache --fix"
-  }
+  },
+  "private": true
 }
