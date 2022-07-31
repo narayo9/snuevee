@@ -1,8 +1,7 @@
 import { atom } from "recoil";
 
 export interface BasicCrawlerState {
-  status: 'PIE_INITIALIZING' | 'PIE_READY' | 'MAIN_PAGE_LOADED'
-  window: null
+  status: 'BOOTING_UP' | 'LOGIN_PAGE' | 'MAIN_PAGE'
 }
 
 export interface CrawlerState {
@@ -11,15 +10,13 @@ export interface CrawlerState {
 }
 
 export const crawlerAtom = atom<CrawlerState>({
-  key: "loginState",
+  key: "crawlerState",
   default: {
     everytime: {
-      status: 'PIE_INITIALIZING',
-      window: null
+      status: 'BOOTING_UP',
     },
     snulife: {
-      status: 'PIE_INITIALIZING',
-      window: null
+      status: 'BOOTING_UP',
     },
   },
 });

@@ -4,8 +4,10 @@ import { RecoilRoot } from 'recoil'
 import MainPage from './pages/MainPage'
 import SearchPage from './pages/SearchPage'
 import SignInPage from './pages/SignInPage'
+import useIpc from './useIpc'
 
 function App() {
+  useIpc()
   return (
     <RecoilRoot>
       <HashRouter>
