@@ -51,8 +51,8 @@
               "config": "./webpack.renderer.config.js",
               "entryPoints": [
                 {
-                  "html": "./src/index.html",
-                  "js": "./src/renderer.ts",
+                  "html": "./src/renderer/index.html",
+                  "js": "./src/renderer/renderer.ts",
                   "name": "main_window"
                 }
               ]
@@ -76,12 +76,17 @@
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
     "css-loader": "^6.0.0",
     "electron": "19.0.10",
-    "eslint": "^8.0.1",
-    "eslint-plugin-import": "^2.25.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "fork-ts-checker-webpack-plugin": "^7.2.1",
     "node-loader": "^2.0.0",
     "style-loader": "^3.0.0",
     "ts-loader": "^9.2.2",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typescript": "~4.5.4"
   },
   "dependencies": {

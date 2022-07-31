@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "paths": {
       "*": ["node_modules/*"],
-      "~/*": ["./src/*"]
+      "@renderer/*": ["./src/renderer/*"],
+      "@main/*": ["./src/main/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react"

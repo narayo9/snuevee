@@ -1,6 +1,6 @@
 import { Typography } from "antd";
 import { useSetRecoilState } from "recoil";
-import { loginInfoAtom } from "~/recoil/atoms/auth";
+import { loginInfoAtom } from "@renderer/atoms/auth";
 import BasicAuthForm from "./BasicAuthForm";
 
 export interface Props {

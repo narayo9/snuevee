@@ -1,7 +1,7 @@
 import { Button, Form, Input } from "antd";
 import { useForm } from "react-hook-form";
-import { BasicAuth } from "~/recoil/atoms/auth";
-import HookFormItem from "~/components/HookFormItem";
+import { BasicAuth } from "@renderer/atoms/auth";
+import HookFormItem from "@renderer/components/HookFormItem";
 
 export interface Props {
   onValid: (values: BasicAuth) => void

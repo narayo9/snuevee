@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import SignIn from "~/components/signIn/SignIn";
+import SignIn from "@renderer/components/signIn/SignIn";
 
 const SignInPage = () => {
   return (
