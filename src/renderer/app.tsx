@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { HashRouter, Routes, Route } from "react-router-dom";
-import { RecoilRoot } from "recoil";
-import MainPage from "./pages/MainPage";
-import SearchPage from "./pages/SearchPage";
-import SignInPage from "./pages/SignInPage";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import { RecoilRoot } from 'recoil'
+import MainPage from './pages/MainPage'
+import SearchPage from './pages/SearchPage'
+import SignInPage from './pages/SignInPage'
 
-const App: React.FC = () => {
+function App() {
   return (
     <RecoilRoot>
       <HashRouter>
@@ -17,11 +17,11 @@ const App: React.FC = () => {
         </Routes>
       </HashRouter>
     </RecoilRoot>
-  );
-};
-
-function render() {
-  ReactDOM.render(<App />, document.body);
+  )
 }
 
-render();
+function render() {
+  ReactDOM.render(<App />, document.body)
+}
+
+render()

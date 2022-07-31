@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import SignIn from "@renderer/components/signIn/SignIn";
 
-const SignInPage = () => {
+function SignInPage() {
   return (
     <div
       css={css`
@@ -12,6 +12,6 @@ const SignInPage = () => {
       <SignIn />
     </div>
   );
-};
+}
 
 export default SignInPage;

@@ -1,4 +1,4 @@
-const SearchPage = () => {
+function SearchPage() {
   return <>this is search page</>
 }
 

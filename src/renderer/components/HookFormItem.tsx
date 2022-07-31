@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import { ErrorMessage } from '@hookform/error-message'
 import { Form } from 'antd'
-import { ComponentProps } from 'react'
+import React, { ComponentProps } from 'react'
 import { Controller } from 'react-hook-form'
 import type {
   ControllerProps,
@@ -30,7 +30,7 @@ export interface Props<
   children?: React.ReactNode
 }
 
-const HookFormItem = <
+function HookFormItem<
   TFieldValues extends FieldValues,
   TName extends FieldPath<TFieldValues>
 >({
@@ -44,7 +44,7 @@ const HookFormItem = <
   validateStatus,
   help,
   ...props
-}: Props<TFieldValues, TName>) => {
+}: Props<TFieldValues, TName>) {
   const { invalid } = form.getFieldState(name)
   return (
     <Form.Item
@@ -52,6 +52,7 @@ const HookFormItem = <
       help={
         invalid ? (
           <ErrorMessage
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             errors={form.formState.errors as Record<string, any>}
             name={name as string}
           />

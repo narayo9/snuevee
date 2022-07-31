@@ -1,13 +1,13 @@
-import { Button, Form, Input } from "antd";
-import { useForm } from "react-hook-form";
-import { BasicAuth } from "@renderer/atoms/auth";
-import HookFormItem from "@renderer/components/HookFormItem";
+import { Button, Form, Input } from 'antd'
+import { useForm } from 'react-hook-form'
+import { BasicAuth } from '@renderer/atoms/auth'
+import HookFormItem from '@renderer/components/HookFormItem'
 
 export interface Props {
   onValid: (values: BasicAuth) => void
 }
 
-const BasicAuthForm: React.FC<Props> = ({ onValid }) => {
+function BasicAuthForm({ onValid }: Props) {
   const form = useForm<BasicAuth>()
   return (
     <Form
@@ -22,14 +22,14 @@ const BasicAuthForm: React.FC<Props> = ({ onValid }) => {
         name="id"
         label="ID"
         required
-        render={({ field }) => <Input {...field} /> }
+        render={({ field }) => <Input {...field} />}
       />
       <HookFormItem
         form={form}
         name="password"
         label="비밀번호"
         required
-        render={({ field }) => <Input.Password {...field} /> }
+        render={({ field }) => <Input.Password {...field} />}
       />
 
       <Form.Item>
@@ -38,7 +38,7 @@ const BasicAuthForm: React.FC<Props> = ({ onValid }) => {
         </Button>
       </Form.Item>
     </Form>
-  );
-};
+  )
+}
 
 export default BasicAuthForm
